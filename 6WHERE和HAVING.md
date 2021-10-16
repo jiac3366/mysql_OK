@@ -1,3 +1,10 @@
+---
+title: WHERE和HAVING
+categories:
+  - MySQL必知必会
+toc: true 
+---
+
 - 需要查询出一个商品记录集，限定条件是单笔销售金额超过 50 元-->2者结果一样
   ![image-20211007164836324](C:\Users\chenjiaxi\AppData\Roaming\Typora\typora-user-images\image-20211007164836324.png)
 
