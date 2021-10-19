@@ -6,18 +6,18 @@ toc: true
 ---
 
 - 需要查询出一个商品记录集，限定条件是单笔销售金额超过 50 元-->2者结果一样
-  ![image-20211007164836324](C:\Users\chenjiaxi\AppData\Roaming\Typora\typora-user-images\image-20211007164836324.png)
+  ![image-20211007164836324](https://cdn.jsdelivr.net/gh/jiac3366/image-host@master/mysqlbizhbihui/image-20211007164836324.c21mvdf6vdc.png)
 
   
 
 - WHERE——先从数据表 demo.transactiondetails 中抽取满足条件“a.salesvalue>50，然后连接goodsmaster，再DISTINCT
   也就是先限定金额>50的流水，再把商品名字加过去
 
-- ![image-20211007154747965](C:\Users\chenjiaxi\AppData\Roaming\Typora\typora-user-images\image-20211007154747965.png)
+- ![image-20211007154747965](https://cdn.jsdelivr.net/gh/jiac3366/image-host@master/mysqlbizhbihui/image-20211007154739645.6a3jjqb8k180.png)
 
 - HAVING查询过程——
 
-- ![image-20211007165757837](C:\Users\chenjiaxi\AppData\Roaming\Typora\typora-user-images\image-20211007165757837.png)
+- ![image-20211007165757837](https://cdn.jsdelivr.net/gh/jiac3366/image-host@master/mysqlbizhbihui/image-20211007165751197.3jutbianj3i0.png)
 
   - 先把有关的信息从关联表都连接好
   - 对数据集进行分组，形成一个包含所有需要的信息的数据集合
@@ -31,5 +31,5 @@ toc: true
 
   - 2者不互斥——要查询“2020-12-10”和“2020-12-11”这两天收银金额超过 100 元的销售日期、收银员名称、销售数量和销售金额。
 
-    ![image-20211007171731122](C:\Users\chenjiaxi\AppData\Roaming\Typora\typora-user-images\image-20211007171731122.png)
+    ![image-20211007171731122](https://cdn.jsdelivr.net/gh/jiac3366/image-host@master/mysqlbizhbihui/image-20211007171728111.oqx293qoxy8.png)
 
